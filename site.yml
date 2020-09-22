@@ -1,0 +1,26 @@
+site:
+  title: Tanzsport Deutschland ESV
+  start_page: ROOT::index.adoc
+content:
+  sources:
+    - url: ./
+      branches: HEAD
+      start_path: doc/
+#    - url: ./../esv-schnittstellen-adoc
+#      branches: HEAD
+#      start_path: doc/
+asciidoc:
+  attributes:
+    linkattrs: ""
+    toc: ~
+  extensions: []
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+output:
+  dir: ./build/site
+  destinations:
+    - provider: archive
+runtime:
+  fetch: true
