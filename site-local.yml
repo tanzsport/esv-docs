@@ -1,14 +1,14 @@
 site:
   title: Tanzsport Deutschland · ESV
-  url: https://tanzsport.github.io/esv-docs
+  url: http://localhost:8080
   start_page: ROOT::index.adoc
 content:
   sources:
-    - url: https://github.com/tanzsport/esv-docs.git
-      branches: master
+    - url: ./
+      branches: HEAD
       start_path: doc/
-    - url: https://github.com/tanzsport/esv-docs-api.git
-      branches: 2.0.0-wip
+    - url: ./../esv-docs-api
+      branches: HEAD
       tags: [ v0.7, v1.0, v1.1, v1.2, v1.3, v1.4, v1.4.1, v1.5.0, v1.6.0, v1.6.1, v1.6.2 ]
       start_path: doc/
 asciidoc:
@@ -24,4 +24,4 @@ ui:
 output:
   dir: ./build/site
 runtime:
-  fetch: true
+  fetch: false

@@ -1,1 +1,23 @@
-= Index site
+= ESV-Dokumentation
+
+Dies Webseite bündelt die technische Dokumentation zur elektronischen Sportverwaltung von Tanzsport Deutschland.
+
+IMPORTANT: Die Endbenutzer-Dokumentation zur ESV ist unter https://esv.tanzsport.de[,window=_blank] zu finden.
+
+== Module
+
+Folgende Dokumentationsmodule stehen zur Verfügung:
+
+=== API
+
+Dokumentiert die API-Schnittstellen.
+
+* xref:2.0.0-wip@api:api-scrutiny:index.adoc[Version 2.0.0 (in Arbeit)]
+* xref:1.6.2@api:api-scrutiny:index.adoc[Version 1.6.2 (letzte finale Version)]
+* ältere Versionen sind über die Modul-Navigation (unten links) zu erreichen
+
+=== JSON-Schema
+
+Dokumentiert das JSON-Schema für Requests und Responses der API-Schnittstellen.
+
+=> https://tanzsport.github.io/esv-json-schema[,window=_blank] (wird noch integriert)

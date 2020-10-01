@@ -1,6 +1,6 @@
 name: ROOT
-title: Tanzsport Deutschland ESV
-version: "0.1"
+title: Dokumentation
+version: "master"
 start_page: ROOT:index.adoc
 nav:
   - modules/ROOT/nav.adoc

@@ -1,1 +1,2 @@
-.xref:index.adoc[Basics]
+.xref:index.adoc[Übersicht]
+* xref:aktualisierungen.adoc[Aktualisierungen]

@@ -1,0 +1,27 @@
+{
+  "name": "esv-docs",
+  "version": "0.0.1",
+  "author": "Hendrik Heneke <heneke@tanzsport.de>",
+  "license": "GFDL",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tanzsport/esv-docs"
+  },
+  "scripts": {
+    "antora": "antora",
+    "site:generate": "rimraf build/site && antora site.yml",
+    "site:generate:local": "rimraf build/site-local && antora site-local.yml",
+    "site:serve": "npm run site:generate && http-server -p 8080 -c-1 build/site",
+    "site:serve:local": "npm run site:generate:local && http-server -p 8080 -c-1 build/site-local",
+    "site:watch:local": "onchange \"**/*.adoc\" \"**/*.yml\" \"**/*.hbs\" \"../esv-docs-api/**/*.adoc\" \"../esv-docs-api/**/*.yml\" -- npm run site:generate:local",
+    "site:publish": "npm run site:generate && node publish.js"
+  },
+  "devDependencies": {
+    "@antora/cli": "^2.3.4",
+    "@antora/site-generator-default": "^2.3.4",
+    "gh-pages": "^3.1.0",
+    "http-server": "^0.12.3",
+    "onchange": "^7.0.2",
+    "rimraf": "^3.0.2"
+  }
+}
